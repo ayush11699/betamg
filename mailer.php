@@ -7,7 +7,7 @@ $msg = $email_id;
 $msg = wordwrap($msg,700);
 
 // send email
-if(mail("help.betamurungai@gmail.com","New Subscription mail ",$msg))
+if(mail("ayushmpanara@gmail.com","New Subscription mail ",$msg))
 	header( 'Location: /index.html' ) ;
 else
 	echo "Arre";
