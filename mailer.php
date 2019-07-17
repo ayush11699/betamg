@@ -1,5 +1,8 @@
 <?php
 // the message
+// Report all errors
+error_reporting(E_ALL);
+
 $email_id  = $_REQUEST['email'];
 $msg = $email_id;
 
