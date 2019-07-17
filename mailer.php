@@ -12,7 +12,7 @@ $message = "The mail message was sent with the following mail setting:\r\nSMTP =
 
 $headers = "From: ayushmpanara@gmail.com";
 
-mail("Sending@provider.com", "Testing", $message, $headers);
+mail("help.betamurungai@gmail.com", "Testing", $message, $headers);
 echo "Check your email now....&lt;BR/>";
 
 ?>
