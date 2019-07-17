@@ -5,14 +5,14 @@ error_reporting(E_ALL);
 
 $email_id  = $_REQUEST['email'];
 $msg = $email_id;
+ini_set("SMTP", "aspmx.l.google.com");
+ini_set("sendmail_from", "ayushmpanara@gmail.com");
 
-// use wordwrap() if lines are longer than 70 characters
-$msg = wordwrap($msg,700);
+$message = "The mail message was sent with the following mail setting:\r\nSMTP = aspmx.l.google.com\r\nsmtp_port = 25\r\nsendmail_from = ayushmpanara@address.com";
 
-// send email
-mail("help.betamurungai@gmail.com","New Subscription mail ",$msg)
-if(mail("help.betamurungai@gmail.com","New Subscription mail ",$msg))
-	header( 'Location: /index.html' ) ;
-else
-	echo "Arre";
+$headers = "From: ayushmpanara@gmail.com";
+
+mail("Sending@provider.com", "Testing", $message, $headers);
+echo "Check your email now....&lt;BR/>";
+
 ?>
