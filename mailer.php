@@ -10,5 +10,5 @@ $msg = wordwrap($msg,700);
 if(mail("help.betamurungai@gmail.com","New Subscription mail ",$msg))
 	header( 'Location: /index.html' ) ;
 else
-	echo "Arre";;
+	echo "Arre";
 ?>
