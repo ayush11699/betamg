@@ -1,0 +1,16 @@
+ ''''''''''''''''''''''''
+ // is comment here
+ ''''''''''''''''''
+
+ do changes in files as want.
+
+in cmd : 
+	
+	e:  //for first time
+	cd beta-murungai //for first time
+	heroku login //for first time
+	//whenever do changes run following two commands.
+	git commit -am "your update comment here , like done this or done this" 
+	git push heroku master
+
+
