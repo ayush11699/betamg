@@ -1,0 +1,690 @@
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+
+.row {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+body {
+  background-color: white;
+  overflow-x: hidden;
+  margin: 0 !important;
+}
+
+.navbar {
+  background-color: black !important;
+  z-index: 3;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.navbar-brand {
+  font-size: 5.5vh;
+  color: #2e742b !important;
+  font-weight: bold !important;
+  margin-left: 10px;
+  font-weight: 500;
+}
+
+.nav-item {
+  padding: 11px;
+  font-size: 2.2vh;
+}
+
+nav .navbar-nav li a {
+  color: white !important;
+}
+
+.nav-item {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.nav-item:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #2e742b;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.nav-item:hover,
+.nav-item:focus,
+.nav-item:active,
+nav .navbar-nav li a {
+  color: white;
+}
+
+.nav-item:hover:before,
+.nav-item:focus:before,
+.nav-item:active:before,
+nav .navbar-nav li a {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
+
+.overtext1,
+.overtext2 {
+  z-index: 2;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  margin-left: 6%;
+}
+
+.navbar-nav >.active {
+  background-color: #2e742b !important;
+  z-index: 3;
+}
+.navbar-nav >.nav-item>.active{
+  background-color: transparent !important;
+
+}
+
+#Home {
+  margin-top: 10vh;
+  height: 100vh;
+}
+
+.home {
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.4),
+      rgba(225, 225, 225, 0.2)
+    ),
+    url("../media/poweder2c.jpg") no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+  min-height: 90vh;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.overtext1 {
+  color: #2e742b;
+  margin-top: 10%;
+  font-weight: bold;
+}
+
+.overtext2 {
+  margin-top: -5%;
+}
+
+.home-txt {
+  margin-left: 7%;
+  z-index: 0;
+  position: absolute;
+  font-size: 5vh;
+  color: white;
+}
+
+#carouselExampleControls > .carousel-inner1 > .carousel-item {
+  width: 100%;
+  height: 100vh;
+  min-height: 700px;
+}
+
+.carousel-item1 {
+  background: linear-gradient(
+      to right,
+      rgba(0, 2.5, 2.5, 0.8),
+      rgba(0, 0, 2.5, 0.4),
+      rgba(0, 0, 2.5, 0),
+      rgba(0, 0, 2.5, 0),
+      rgba(0, 0, 2.5, 0.4),
+      rgba(0, 2.5, 2.5, 0.8)
+    ),
+    url("../media/ayurveda4c.jpg") no-repeat;
+  background-size: cover;
+}
+
+.carousel-item2 {
+  background: linear-gradient(
+      to right,
+      rgba(0, 2.5, 2.5, 0.8),
+      rgba(0, 0, 2.5, 0.4),
+      rgba(0, 0, 2.5, 0),
+      rgba(0, 0, 2.5, 0),
+      rgba(0, 0, 2.5, 0.4),
+      rgba(0, 2.5, 2.5, 0.8)
+    ),
+    url("../media/vegvsnonvegc.jpg") no-repeat;
+  background-size: cover;
+}
+
+.carousel-item3 {
+  background: linear-gradient(
+      to right,
+      rgba(0, 2.5, 2.5, 0.8),
+      rgba(0, 0, 2.5, 0.4),
+      rgba(0, 0, 2.5, 0),
+      rgba(0, 0, 2.5, 0),
+      rgba(0, 0, 2.5, 0.4),
+      rgba(0, 2.5, 2.5, 0.8)
+    ),
+    url("../media/money.jpg") no-repeat;
+  background-size: cover;
+}
+
+.tag {
+  margin-top: -10px;
+  background-image: url("../media/dark.jpg");
+  max-height: 700px;
+  width: 100%;
+  min-height: 200px;
+  color: white;
+  font-size: 2vh;
+  font-weight: 100 !important;
+  background-size: cover;
+}
+
+.tag-info {
+  padding-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 2vh;
+}
+
+.desc-info1,
+.desc-info2,
+.desc-info3,
+.desc-info4,
+.desc-info5,
+.impact-info {
+  padding-top: 10vh;
+  min-height: 80vh;
+  margin-top: 5px;
+  color: white;
+  position: relative;
+  font-size: 3vh;
+}
+
+.desc-text1,
+.desc-text3,
+.desc-text2,
+.desc-text4,
+.desc-text5  {
+  margin-top: 5px;
+  height: 50%;
+  padding-left: 2vw;
+}
+
+.desc-info1 {
+  background: linear-gradient(
+      to right,
+      rgba(255, 225, 225, 0),
+      rgba(225, 225, 225, 0),
+      rgba(220, 220, 220, 0),
+      rgba(0, 2.4, 2.5, 0.6),
+      rgba(0, 2.4, 2.5, 0.8),
+      rgba(0, 2.4, 2.5, 0.8),
+      rgba(0, 2.5, 2.5, 0.8),
+      rgba(0, 2.5, 2.5, 0.8)
+    ),
+    url("../media/herb1.jpg") no-repeat center center;
+  background-color: black;
+  background-size: cover;
+}
+.desc-info3 {
+  background: linear-gradient(
+      to right,
+      rgba(255, 225, 225, 0),
+      rgba(225, 225, 225, 0),
+      rgba(220, 220, 220, 0),
+      rgba(0, 2.4, 2.5, 0.6),
+      rgba(0, 2.4, 2.5, 0.6),
+      rgba(0, 2.4, 2.5, 0.6),
+      rgba(0, 2.4, 2.5, 0.8),
+      rgba(0, 2.4, 2.5, 0.8),
+      rgba(0, 2.5, 2.5, 0.8),
+      rgba(0, 2.5, 2.5, 0.8)
+    ),
+    url("../media/fruit.jpg") no-repeat center center;
+  background-color: black;
+  background-size: cover;
+}
+
+.desc-info2 {
+  background: linear-gradient(
+      to right,
+      rgba(0, 2.5, 2.5, 0.8),
+      rgba(0, 2.5, 2.5, 0.8),
+      rgba(0, 2.4, 2.5, 0.8),
+      rgba(0, 2.4, 2.5, 0.8),
+      rgba(0, 2.4, 2.5, 0.6),
+      rgba(220, 220, 220, 0),
+      rgba(225, 225, 225, 0),
+      rgba(255, 225, 225, 0)
+    ),
+    url("../media/dinner.jpg") no-repeat center center;
+  background-color: #2e742b;
+  background-size: cover;
+}
+.desc-info4 {
+  background: linear-gradient(
+      to right,
+      rgba(0, 2.5, 2.5, 0.8),
+      rgba(0, 2.5, 2.5, 0.8),
+      rgba(0, 2.4, 2.5, 0.8),
+      rgba(0, 2.4, 2.5, 0.8),
+      rgba(0, 2.4, 2.5, 0.6),
+      rgba(220, 220, 220, 0),
+      rgba(225, 225, 225, 0),
+      rgba(255, 225, 225, 0)
+    ),
+    url("../media/green1.jpg") no-repeat center center;
+  background-color: #2e742b;
+  background-size: cover;
+}
+
+.col-sm > img {
+  height: 100% !important;
+  width: 100% !important;
+}
+
+#table-certi {
+  margin-top: 5px;
+}
+
+.table-info {
+  background: black;
+  font-size: 3.2vh;
+  position: relative;
+}
+
+.table-info > .row {
+  color: white !important;
+  padding: 5%;
+  margin-left: 20vh;
+}
+
+.glider-contain {
+  padding: 30px;
+  margin-top: 0.5em;
+  position: relative;
+  color: white;
+  background-color: black;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.glider {
+  background-size: cover;
+  font-size: 3em;
+  font-weight: 600;
+  
+}
+.impact-info {
+  color: white;
+  font-size: 2.7vh;
+}
+#Impacts {
+  background:black;
+  min-height: 80vh;
+  background-size: cover;
+}
+.desc-info5{
+  background: linear-gradient(
+    to left,
+    rgba(0, 2.5, 2.5, 0.8),
+    rgba(0, 2.5, 2.5, 0.8),
+    rgba(0, 2.4, 2.5, 0.8),
+    rgba(0, 2.4, 2.5, 0.8),
+    rgba(0, 2.4, 2.5, 0.6),
+    rgba(220, 220, 220, 0),
+    rgba(225, 225, 225, 0),
+    rgba(255, 225, 225, 0),
+    rgba(0, 2.5, 2.5, 0.8),
+    rgba(0, 2.5, 2.5, 0.8)
+  ),
+  url("../media/farmer.jpg") no-repeat;
+background-position: center;
+background-size: cover;
+}
+
+#Testimony{
+  background:linear-gradient(
+    to left,
+    rgba(0, 2.4, 2.5, 0.4),
+    rgba(0, 2.4, 2.5, 0.6),
+    rgba(220, 220, 220, 0),
+    rgba(220, 220, 220, 0),
+    rgba(220, 220, 220, 0),
+    rgba(220, 220, 220, 0),
+    rgba(220, 220, 220, 0),
+    rgba(0, 2.5, 2.5, 0.6),
+    rgba(0, 2.5, 2.5, 0.4))
+   , url("../media/comm.jpg") no-repeat center center;
+  background-size:  cover;
+  padding-top: 10vh;
+  position: relative;
+}
+
+.impact-info-inner {
+  min-height: 30%;
+  padding: 0vh;
+  padding-bottom: 2vh;
+}
+/*testimonoy*/
+.card {
+  background-color: transparent;
+  height: 100% !important;
+  text-align: center;
+  border: 0;
+  padding-top: 10%;  
+  margin-left: 60vh;
+  margin-right: 60vh;
+  
+}
+
+.card-body {
+  font-size: 20vh !important;
+  margin-top: -15vh;
+  font-weight: 500;
+  color: black;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  margin-top: -25vh;
+}
+.carousel-inner3 {
+  min-height: 50vh;
+}
+
+#Contact {
+  font-size: 3vh;
+  position: relative;
+}
+
+.infocontact {
+  padding-top: 10vh;
+  padding: 5vh;
+  min-height: 60vh !important;
+  background-color: black !important;
+  color: white;
+}
+
+.infoc {
+  font-size: 2.5vh !important;
+  padding-top: 30px;
+}
+
+@media only screen and (min-width: 601px) {
+  .tag {
+    min-height: 350px;
+  }
+  .infoc {
+    padding-left: 10px;
+    font-size: 2vh;
+  }
+  .tbl2 {
+    display: none;
+  }
+  .desc-info5{
+
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .home {
+    background: linear-gradient(
+        to right,
+        rgba(0, 2.5, 2.5, 0.8),
+        rgba(0, 0, 2.5, 0)
+      ),
+      url("../media/poweder3.jpg") no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    line-height: 10.5vh;
+  }
+
+  .overtext1,
+  .overtext2 {
+    font-size: 10vh !important;
+  }
+  .overtext1 {
+    margin-top: 40vh;
+  }
+  .carousel-item1,
+  .carousel-item2,
+  .carousel-item3 {
+    font-size: 11vh;
+  }
+  .item1-txt,
+  .item2-txt,
+  .item3-txt{
+    line-height: 11vh !important;
+  }
+  .item1-txt{
+    margin-top: 38vh !important;
+  }
+  .item2-txt{
+    margin-top: 45vh !important;
+  }
+  .item3-txt{
+    margin-top: 25vh !important;
+  }
+  .item1-txt>p,.item2-txt>p,.item3-txt>p{
+    font-size: 2.5vh !important;
+    line-height:3vh !important;
+  }
+  .carousel-item3 {
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("../media/money.jpg") no-repeat;
+    background-size: cover;
+  }
+  .desc-info1-title,
+  .desc-info2-title,
+  .desc-info3-title,
+  .desc-info4-title,
+  .table-info-title,
+  .cirti-title {
+    font-size: 6vh !important;  
+  }
+  .desc-text1,.desc-text2,.desc-text3,.desc-text4,.desc-text5{
+    margin-top: 35vh;
+    padding-bottom: 10vh;
+  }
+.desc-info1 {
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 225, 225, 0),
+      rgba(225, 225, 225, 0),
+      rgba(220, 220, 220, 0),
+      rgba(0, 2.4, 2.5, 0.6),
+      rgba(0, 2.4, 2.5, 0.8),
+      rgba(0, 2.4, 2.5, 0.8),
+      rgba(0, 2.4, 2.5, 0.8),
+      rgba(0, 2.5, 2.5, 0.8),
+      rgba(0, 2.5, 2.5, 0.8)
+    ),
+    url("../media/herb1.jpg") no-repeat center center;
+  background-color: black;
+  background-size: cover;
+}
+.desc-info3 {
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 225, 225, 0),
+      rgba(225, 225, 225, 0),
+      rgba(220, 220, 220, 0),
+      rgba(0, 2.4, 2.5, 0.6),
+      rgba(0, 2.4, 2.5, 0.6),
+      rgba(0, 2.4, 2.5, 0.6),
+      rgba(0, 2.4, 2.5, 0.8),
+      rgba(0, 2.4, 2.5, 0.8),
+      rgba(0, 2.4, 2.5, 0.8),
+      rgba(0, 2.5, 2.5, 0.8),
+      rgba(0, 2.5, 2.5, 0.8)
+    ),
+    url("../media/fruit.jpg") no-repeat center center;
+  background-color: black;
+  background-size: cover;
+}
+
+.desc-info2 {
+  background: linear-gradient(
+      to top,
+      rgba(0, 2.5, 2.5, 0.8),
+      rgba(0, 2.5, 2.5, 0.8),
+      rgba(0, 2.4, 2.5, 0.8),
+      rgba(0, 2.4, 2.5, 0.8),
+      rgba(0, 2.4, 2.5, 0.8),
+      rgba(0, 2.4, 2.5, 0.6),
+      rgba(220, 220, 220, 0),
+      rgba(225, 225, 225, 0),
+      rgba(255, 225, 225, 0)
+    ),
+    url("../media/dinner.jpg") no-repeat center center;
+  background-color: #2e742b;
+  background-size: cover;
+}
+.desc-info4 {
+  background: linear-gradient(
+      to top,
+      rgba(0, 2.5, 2.5, 0.8),
+      rgba(0, 2.5, 2.5, 0.8),
+      rgba(0, 2.4, 2.5, 0.8),
+      rgba(0, 2.4, 2.5, 0.8),
+      rgba(0, 2.4, 2.5, 0.8),
+      rgba(0, 2.4, 2.5, 0.6),
+      rgba(220, 220, 220, 0),
+      rgba(225, 225, 225, 0),
+      rgba(255, 225, 225, 0)
+    ),
+    url("../media/green1.jpg") no-repeat center center;
+  background-color: #2e742b;
+  background-size: cover;
+}
+.desc-info5 {
+  background: linear-gradient(
+      to top,
+      rgba(0, 2.5, 2.5, 0.8),
+      rgba(0, 2.5, 2.5, 0.8),
+      rgba(0, 2.4, 2.5, 0.8),
+      rgba(0, 2.4, 2.5, 0.8),
+      rgba(0, 2.4, 2.5, 0.8),
+      rgba(0, 2.4, 2.5, 0.6),
+      rgba(220, 220, 220, 0),
+      rgba(225, 225, 225, 0),
+      rgba(255, 225, 225, 0)
+    ),
+    url("../media/farmer.jpg") no-repeat center center;
+  background-color: #2e742b;
+  background-size: cover;
+}
+.desc-info5-title,.desc-info2-title,#tagsec{
+  line-height: 5vh;
+}
+
+
+.glider-contain-title{
+  font-size: 5.3vh !important;
+}
+  .col-md-auto > img {
+    height: 5vh;
+  }
+  .infoc {
+    font-size: 1.5vh;
+  }
+  .cirty-img {
+    padding: 0% !important;
+  }
+  .cirty-img > .col > img {
+    padding: 0% !important;
+    max-height: 12vh !important  ;
+  }
+  
+  .carousel-item3 {
+    background-position-x: -5rem;
+  } 
+  .impact-info-inner {
+    margin: 0%;
+    margin-bottom: 5vh;
+  }
+  .impact-info-inner-title{
+    font-size: 7vh !important;
+  }
+  .card-body,
+  .carousel-control-prev,
+  .carousel-control-next {
+    margin-top: 0;
+  }
+  .tbl1 {
+    display: none;
+    font-size: 2.5vh !important;
+  }
+  .table-responsive {
+    margin: 0% !important;
+  }
+  .tbl2 {
+    font-size: 2.5vh !important;
+  }
+  .slide {
+    font-size: 5vh !important;
+  }
+  #Testimony{
+    background:linear-gradient(
+      to left,
+      rgba(220, 220, 220, 0),
+      rgba(220, 220, 220, 0),
+      rgba(220, 220, 220, 0),
+      rgba(220, 220, 220, 0),
+      rgba(220, 220, 220, 0)
+     )
+     , url("../media/comm.jpg") no-repeat center center;
+    background-size:  cover;
+    padding-top: 17vh;
+    position: relative;
+  }
+  .Testimony-title{
+    font-size: 6vh !important;
+    line-height: 3vh;
+  }
+  
+  .card{
+    margin-left: 0%;
+    margin-right: 0%;
+    padding-top: 0%;
+  }
+  .licence-tag{
+    margin:0% !important;
+    font-size:1.7vh !important;
+
+  }
+}
