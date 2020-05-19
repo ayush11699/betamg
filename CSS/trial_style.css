@@ -611,7 +611,9 @@ background-size: cover;
 .desc-info5-title,.desc-info2-title,#tagsec{
   line-height: 5vh;
 }
-
+.impact-info-inner-title{
+  line-height: 6vh;;
+}
 
 .glider-contain-title{
   font-size: 5.3vh !important;
