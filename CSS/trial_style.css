@@ -477,15 +477,16 @@ background-size: cover;
 
   .overtext1,
   .overtext2 {
-    font-size: 10vh !important;
+    font-size: 17vw !important;
   }
   .overtext1 {
     margin-top: 40vh;
   }
+  
   .carousel-item1,
   .carousel-item2,
   .carousel-item3 {
-    font-size: 11vh;
+    font-size: 17vw;
   }
   .item1-txt,
   .item2-txt,
