@@ -215,7 +215,7 @@ nav .navbar-nav li a {
 
 .tag-info {
   padding: 0% !important;
-  margin-left: 10%;
+  margin-left: 7%;
   margin-right: 10%;
   font-size: 2vh;
   height: auto !important;
@@ -508,6 +508,15 @@ background-size: cover;
   .coat-inner{
     padding-top:0px !important ;
     margin-left: 4vw !important;
+  }
+  .tag-info{
+    margin-left: 15vw;
+  }
+  .bold{
+    font-size: 14vw !important;
+  }
+  .vm{
+    display:inline !important;
   }
   .carousel-item3 {
     background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("../media/money.jpg") no-repeat;
